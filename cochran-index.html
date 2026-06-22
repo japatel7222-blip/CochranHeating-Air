@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cochran Heating & Air | HVAC Contractor in Emerson, GA</title>
+  <meta name="description" content="Cochran Heating & Air provides trusted heating and cooling service in Emerson, Cartersville, Acworth, Woodstock, and surrounding North Georgia areas. Call today for HVAC repair, maintenance, and installation." />
+  <meta name="keywords" content="Cochran Heating and Air, HVAC Emerson GA, HVAC Cartersville GA, air conditioning repair, heating repair, AC service, HVAC contractor" />
+
+  <meta property="og:title" content="Cochran Heating & Air | Emerson, GA HVAC Service" />
+  <meta property="og:description" content="Reliable heating and cooling service for homes and businesses in Emerson and surrounding North Georgia communities." />
+  <meta property="og:type" content="website" />
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #061827;
+  --navy-2: #0a2237;
+  --orange: #f25a18;
+  --orange-dark: #d94c12;
+  --text: #0d1b2a;
+  --muted: #5b6775;
+  --light: #f5f7fa;
+  --white: #ffffff;
+  --border: #dde3ea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.top-strip {
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 7%;
+  font-size: 14px;
+}
+
+.top-strip a {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.site-header {
+  background: var(--white);
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, .08);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mark {
+  width: 52px;
+  height: 52px;
+  border: 7px solid var(--orange);
+  border-right-color: var(--navy);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: var(--navy);
+  font-size: 24px;
+}
+
+.brand strong {
+  display: block;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: var(--navy);
+}
+
+.brand span {
+  display: block;
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 34px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: var(--orange);
+}
+
+.header-cta,
+.btn,
+.contact-form button {
+  background: var(--orange);
+  color: var(--white);
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+}
+
+.header-cta:hover,
+.btn.primary:hover,
+.contact-form button:hover {
+  background: var(--orange-dark);
+}
+
+.hero {
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px 7%;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.52) 42%, rgba(0,0,0,.08) 100%),
+    url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 680px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--orange);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: clamp(52px, 7vw, 88px);
+  line-height: .95;
+  margin: 10px 0 22px;
+  letter-spacing: -3px;
+}
+
+.hero-text {
+  font-size: 21px;
+  line-height: 1.55;
+  max-width: 560px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid var(--white);
+}
+
+.btn.secondary:hover {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.trust-bar {
+  background: var(--navy);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 7%;
+}
+
+.trust-bar div {
+  border-right: 1px solid rgba(255,255,255,.2);
+  padding: 0 24px;
+}
+
+.trust-bar div:first-child {
+  padding-left: 0;
+}
+
+.trust-bar div:last-child {
+  border-right: 0;
+}
+
+.trust-bar strong {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.trust-bar span {
+  color: #dbe6f0;
+  font-size: 14px;
+}
+
+.section {
+  padding: 80px 7%;
+}
+
+.services {
+  text-align: center;
+}
+
+.services h2,
+.about h2,
+.contact-form h2 {
+  font-size: clamp(34px, 4vw, 52px);
+  margin: 10px 0 30px;
+  color: var(--navy);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.service-grid article {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+
+.icon {
+  color: var(--orange);
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.service-grid h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--navy);
+}
+
+.service-grid p {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.reviews {
+  background:
+    linear-gradient(rgba(6,24,39,.94), rgba(6,24,39,.94)),
+    url("https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr 1fr;
+  gap: 34px;
+  padding: 70px 7%;
+}
+
+.reviews h2 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.stars {
+  color: #ffc845;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 12px 0;
+}
+
+.review-card {
+  border-left: 1px solid rgba(255,255,255,.22);
+  padding-left: 34px;
+}
+
+.review-card p {
+  line-height: 1.7;
+  color: #edf4fb;
+}
+
+.review-card span {
+  font-weight: 700;
+}
+
+.about-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  background: var(--light);
+  align-items: start;
+}
+
+.about p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.mini-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.mini-features strong {
+  display: block;
+  color: var(--navy);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.mini-features span {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contact-form {
+  background: var(--white);
+  padding: 34px;
+  border-radius: 8px;
+  box-shadow: 0 16px 45px rgba(0,0,0,.08);
+}
+
+.contact-form h2 {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.contact-form p {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  padding: 14px;
+  margin-bottom: 12px;
+  font: inherit;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  display: block;
+}
+
+footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 50px 7% 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr .8fr .9fr 1.1fr;
+  gap: 46px;
+}
+
+.footer-brand .mark {
+  border-color: var(--orange);
+  border-right-color: var(--white);
+  color: var(--white);
+}
+
+.footer-brand strong {
+  color: var(--white);
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+footer p,
+footer a {
+  color: #dbe6f0;
+  line-height: 1.8;
+}
+
+footer div > a {
+  display: block;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255,255,255,.15);
+  text-align: center;
+  margin-top: 40px;
+  padding: 18px 0;
+  color: #dbe6f0;
+  font-size: 14px;
+}
+
+@media (max-width: 1050px) {
+  nav {
+    display: none;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews,
+  .about-contact,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .top-strip {
+    display: block;
+    text-align: center;
+  }
+
+  .top-strip span,
+  .top-strip a {
+    display: block;
+    margin: 4px 0;
+  }
+
+  .site-header {
+    flex-direction: column;
+  }
+
+  .hero {
+    min-height: 560px;
+    padding: 60px 6%;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .trust-bar,
+  .service-grid,
+  .mini-features,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-bar div {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+    padding: 18px 0;
+  }
+
+  .brand strong {
+    font-size: 22px;
+  }
+
+  .brand span {
+    font-size: 15px;
+  }
+}
+
+</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "Cochran Heating & Air",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "31 9th St",
+      "addressLocality": "Emerson",
+      "addressRegion": "GA",
+      "postalCode": "30137"
+    },
+    "telephone": "+17703861944",
+    "areaServed": ["Emerson GA", "Cartersville GA", "Acworth GA", "Woodstock GA"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.3",
+      "reviewCount": "20"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="top-strip">
+    <span>31 9th St, Emerson, GA 30137</span>
+    <span>Mon – Fri: 8AM – 5PM</span>
+    <a href="tel:7703861944">(770) 386-1944</a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <div class="mark">C</div>
+      <div>
+        <strong>COCHRAN</strong>
+        <span>HEATING & AIR</span>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="header-cta" href="tel:7703861944">Call Now</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Local HVAC Service in North Georgia</p>
+        <h1>Comfort you can count on.</h1>
+        <p class="hero-text">
+          Reliable heating and cooling services for homes and businesses in Emerson,
+          Cartersville, and surrounding areas.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="tel:7703861944">Call (770) 386-1944</a>
+          <a class="btn secondary" href="#contact">Request Service</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div>
+        <strong>Fast Response</strong>
+        <span>Here when you need us.</span>
+      </div>
+      <div>
+        <strong>Honest Service</strong>
+        <span>Clear, upfront recommendations.</span>
+      </div>
+      <div>
+        <strong>Quality Work</strong>
+        <span>Skilled service and reliable results.</span>
+      </div>
+      <div>
+        <strong>Family Owned</strong>
+        <span>Proudly serving our community.</span>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <p class="section-label">Our Services</p>
+      <h2>Complete HVAC solutions.</h2>
+
+      <div class="service-grid">
+        <article>
+          <div class="icon">❄</div>
+          <h3>Air Conditioning</h3>
+          <p>AC repair, maintenance, and service to keep your home cool all summer.</p>
+        </article>
+        <article>
+          <div class="icon">🔥</div>
+          <h3>Heating</h3>
+          <p>Heating repair and seasonal service to keep your home warm and comfortable.</p>
+        </article>
+        <article>
+          <div class="icon">🔧</div>
+          <h3>Maintenance</h3>
+          <p>Preventative tune-ups for better performance and fewer costly surprises.</p>
+        </article>
+        <article>
+          <div class="icon">💨</div>
+          <h3>Indoor Air Quality</h3>
+          <p>Comfort solutions that help improve the air your family breathes.</p>
+        </article>
+        <article>
+          <div class="icon">⌂</div>
+          <h3>System Installation</h3>
+          <p>Dependable support when it is time to upgrade your heating or cooling system.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="reviews-score">
+        <h2>Google</h2>
+        <div class="stars">★★★★★</div>
+        <p><strong>4.3 out of 5 stars</strong><br>Based on 20 reviews</p>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“Quick to respond and got our AC working again the same day. Very honest and professional.”</p>
+        <span>— Local Customer</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“Great service from a local company you can trust. They take care of their customers.”</p>
+        <span>— Local Customer</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“Reliable, fair, and quality work. Our go-to HVAC company.”</p>
+        <span>— Local Customer</span>
+      </div>
+    </section>
+
+    <section class="section about-contact" id="about">
+      <div class="about">
+        <p class="section-label">About Cochran Heating & Air</p>
+        <h2>Local. Reliable. Trusted.</h2>
+        <p>
+          Cochran Heating & Air is a local HVAC company proudly serving Emerson,
+          Cartersville, and surrounding North Georgia communities. We believe in honest
+          service, quality workmanship, and treating every customer like family.
+        </p>
+
+        <div class="mini-features">
+          <div>
+            <strong>Local Experts</strong>
+            <span>We live and work in North Georgia.</span>
+          </div>
+          <div>
+            <strong>Built on Trust</strong>
+            <span>Honest service and fair recommendations.</span>
+          </div>
+          <div>
+            <strong>Comfort Focused</strong>
+            <span>Your comfort is our priority.</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact" action="mailto:cochranhvac63@gmail.com" method="post" enctype="text/plain">
+        <h2>Request Service</h2>
+        <p>Fill out the form below and we’ll get back to you shortly.</p>
+
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+        </div>
+
+        <input type="email" name="email" placeholder="Email Address">
+        <select name="service">
+          <option value="">Service Needed</option>
+          <option>Air Conditioning</option>
+          <option>Heating</option>
+          <option>Maintenance</option>
+          <option>Installation</option>
+          <option>Other</option>
+        </select>
+        <textarea name="message" placeholder="How can we help?" rows="5"></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
+    <section class="map-section">
+      <iframe
+        title="Cochran Heating & Air Location"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=31%209th%20St%2C%20Emerson%2C%20GA%2030137&output=embed">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#">
+          <div class="mark">C</div>
+          <div>
+            <strong>COCHRAN</strong>
+            <span>HEATING & AIR</span>
+          </div>
+        </a>
+        <p>Comfort you can count on.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h4>Serving</h4>
+        <p>Emerson, GA<br>Cartersville, GA<br>Acworth, GA<br>Woodstock, GA<br>And surrounding areas</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>31 9th St, Emerson, GA 30137</p>
+        <p><a href="tel:7703861944">(770) 386-1944</a></p>
+        <p><a href="mailto:cochranhvac63@gmail.com">cochranhvac63@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2026 Cochran Heating & Air. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
